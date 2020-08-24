@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-24T01:58:03.745Z</updated>
+  <updated>2020-08-24T04:50:45.966Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo使用NexT主题</title>
-    <link href="http://yoursite.com/2020/08/24/Hexo%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/"/>
-    <id>http://yoursite.com/2020/08/24/Hexo%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</id>
-    <published>2020-08-24T01:29:55.000Z</published>
-    <updated>2020-08-24T01:58:03.745Z</updated>
+    <title>Git的使用</title>
+    <link href="http://yoursite.com/2020/08/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2020/08/24/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-24T02:27:51.000Z</published>
+    <updated>2020-08-24T04:50:45.966Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure><h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo/_config.yml</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></p><p> 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p><p>是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p><p>与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><h4 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h4><p> git init 命令来初始化一个 Git 仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure><h4 id="git-clone"><a href="#git-clone" class="headerlink" title="git clone"></a>git clone</h4><p>git clone 命令从现有 Git 仓库中拷贝项目</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;repo&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;repo&gt; &lt;directory&gt;</span><br></pre></td></tr></table></figure><p><strong>参数说明：</strong></p><ul><li><p><strong>repo:</strong>Git 仓库。</p></li><li><p><strong>directory:</strong>本地目录。</p></li></ul><h4 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a>git add</h4><p>git add 命令可将该文件添加到缓存</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure><h4 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h4><p>git status 命令查看在你上次提交之后是否有修改</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure><h4 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h4><p>git diff 命令显示已写入缓存与已修改但尚未写入缓存的改动的区别</p><p>git diff 有两个主要的应用场景。</p><ul><li><p>尚未缓存的改动：<strong>git diff</strong></p></li><li><p>查看已缓存的改动： <strong>git diff —cached</strong></p></li><li><p>查看已缓存的与未缓存的所有改动：<strong>git diff HEAD</strong></p></li><li><p>显示摘要而非整个 diff：<strong>git diff —stat</strong></p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff</span><br></pre></td></tr></table></figure><h4 id="git-commit"><a href="#git-commit" class="headerlink" title="git commit"></a>git commit</h4><p>使用 git add 命令将想要快照的内容写入缓存区， 而执行 git commit 将缓存区内容添加到仓库中</p><p>Git 为你的每一个提交都记录你的名字与电子邮箱地址，所以第一步需要配置用户名和邮箱地址</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">'username'</span></span><br><span class="line">$ git config --global user.email Email Adress</span><br></pre></td></tr></table></figure><p>-m 选项以在命令行中提供提交注释</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">''</span></span><br></pre></td></tr></table></figure><p> -a 选项跳过提交缓存的流程</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -a</span><br></pre></td></tr></table></figure><h4 id="git-reset-HEAD"><a href="#git-reset-HEAD" class="headerlink" title="git reset HEAD"></a>git reset HEAD</h4><p>git reset HEAD 命令用于取消已缓存的内容</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD &lt;file&gt;</span><br></pre></td></tr></table></figure><h4 id="git-rm"><a href="#git-rm" class="headerlink" title="git rm"></a>git rm</h4><p>如果只是简单地从工作目录中手工删除文件，运行 <strong>git status</strong> 时就会在 <strong>Changes not staged for commit</strong> 的提示。</p><p>要从 Git 中移除某个文件，就必须要从已跟踪文件清单中移除，然后提交。可以用以下命令完成此项工作</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm &lt;file&gt;</span><br></pre></td></tr></table></figure><p>如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 <strong>-f</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm -f &lt;file&gt;</span><br></pre></td></tr></table></figure><p>如果把文件从暂存区域移除，但仍然希望保留在当前工作目录中，换句话说，仅是从跟踪清单中删除，使用 <strong>—cached</strong> 选项即可</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached &lt;file&gt;</span><br></pre></td></tr></table></figure><h4 id="git-mv"><a href="#git-mv" class="headerlink" title="git mv"></a>git mv</h4><p>git mv 命令用于移动或重命名一个文件、目录、软连接。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git mv &lt;file&gt; &lt;file&gt;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;Downloading-NexT&quot;&gt;&lt;a href=&quot;#Downloading-NexT&quot; class=&quot;headerlink&quot; title=&quot;Downloading NexT&quot;&gt;&lt;/a&gt;Downloading NexT&lt;/h4&gt;&lt;figure class=&quot;hi
+        &lt;p&gt;&lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。&lt;/p&gt;
+&lt;p&gt;是 Linus Torvalds
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo使用NexT主题</title>
+    <link href="http://yoursite.com/2020/08/24/Hexo%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/08/24/Hexo%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</id>
+    <published>2020-08-24T01:29:55.000Z</published>
+    <updated>2020-08-24T02:38:23.210Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://theme-next.org/" target="_blank" rel="noopener">Next</a> </p><p>是Hexo的主题。</p><h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure><h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo/_config.yml</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://theme-next.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Next&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;是Hexo的主题。&lt;/p&gt;
+&lt;h4 id=&quot;Downloading-NexT&quot;&gt;&lt;a href=&quot;#Downl
       
     
     </summary>
