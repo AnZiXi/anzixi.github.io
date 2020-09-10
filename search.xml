@@ -59,6 +59,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo使用NexT主题</title>
+    <url>/2020/08/24/Hexo%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<p><a href="https://theme-next.org/" target="_blank" rel="noopener">Next</a> </p>
+<p>是Hexo的主题。</p>
+<h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure>
+<h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo/_config.yml</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Hexo NexT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo的使用</title>
     <url>/2020/07/20/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>​       </p>
@@ -552,18 +564,6 @@
 ]]></content>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo使用NexT主题</title>
-    <url>/2020/08/24/Hexo%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<p><a href="https://theme-next.org/" target="_blank" rel="noopener">Next</a> </p>
-<p>是Hexo的主题。</p>
-<h4 id="Downloading-NexT"><a href="#Downloading-NexT" class="headerlink" title="Downloading NexT"></a>Downloading NexT</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure>
-<h4 id="Enabling-NexT"><a href="#Enabling-NexT" class="headerlink" title="Enabling NexT"></a>Enabling NexT</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo/_config.yml</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>Hexo NexT</tag>
       </tags>
   </entry>
 </search>
